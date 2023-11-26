@@ -1,0 +1,96 @@
+/* global style */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Jomhuria&family=Lexend&family=Open+Sans:wght@300;400;700&family=Poppins:wght@500;600&family=Roboto&family=Rubik:wght@300&family=Work+Sans:wght@200;300;400;500;600;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 65, 65);
+  }
+  
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+.container{
+    padding: 0 ;
+    margin: 0 auto;
+}
+.landing{
+    background-color: rgb(66, 65, 65);
+
+}
+.landing .container{
+    width: 100wh;
+  height: 100vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing .container .page{
+    background-color: white;
+    border-radius: 20px;
+    width: 700px;
+    height: 600px
+   
+}
+.landing .container .page .info{
+    padding: 79px;
+}
+.landing .container .page .info h1{
+    font-size: 65px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 19px;
+    margin-top: 22px;
+}
+.landing .container .page .info p{
+    font-family: sans-serif;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 22px;
+}
+.landing .container .page .info .btn{
+    width: 90%;
+    padding: 20px;
+    /* margin-top: 20px; */
+   border-radius: 7px;
+   border: none;
+   cursor: pointer;
+   color: white;
+   background-color: rgb(237, 119, 119);
+   font-size: 20px;
+}
+@media(max-Width:700px){
+    .landing .container .page{
+        background-color: white;
+        border-radius: 0;
+       height: 100vh;
+       position: relative;
+       
+    }  
+    .landing .container .page .info{
+        margin-top: 150px;
+    }
+    .landing .container .page .info h1{
+        font-size: 70px;
+        margin-bottom: 25px;
+        margin-top: 40px;
+    }
+    .landing .container .page .info p{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .landing .container .page .btn{
+        position: absolute;
+        bottom: 35px;
+       left: 35px;
+    }
+}

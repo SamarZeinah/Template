@@ -1,0 +1,113 @@
+
+/* global style */
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Jomhuria&family=Lexend&family=Open+Sans:wght@300;400;700&family=Poppins:wght@500;600&family=Roboto&family=Rubik:wght@300&family=Work+Sans:wght@200;300;400;500;600;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 65, 65);
+  }
+  
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+.container{
+    padding: 0 ;
+    margin: 0 auto;
+}
+.landing {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(66, 65, 65);
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+.landing .page{
+    background-color: white;
+    width: 900px;
+    height: 590px;;
+    border-radius: 50px;
+    display: flex;
+    border:6px solid white;
+}
+.landing .container .info{
+    margin-left: 40px;
+}
+.landing .container .info h1{
+    text-align: center;
+    font-size: 65px;
+    /* margin-left: 20px; */
+    margin-top: 65px;
+    font-family: sans-serif;
+}
+.landing .container .info p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.landing .container h4{
+    font-size: 19px;
+    margin-top: 3px;
+    font-family: 'Cairo', sans-serif;
+}
+.landing .container h5{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.landing .container input{
+    width: 90%;
+    padding: 20px;
+    /* margin-top: 65px; */
+   border-radius: 7px;
+   cursor: pointer;
+}
+.landing .container .btn{
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+   border-radius: 7px;
+   border: none;
+   cursor: pointer;
+   color: white;
+   background-color: rgb(237, 119, 119);
+   font-size: 20px;
+}
+ .landing .container .image img{
+    padding: 20px;
+    height: 570px;
+}
+@media(max-Width:700px){
+    .landing .page{
+        flex-direction: column-reverse;
+        width: 700px;
+        /* width: fit-content; */
+        height: 1111px;
+        border-radius: 0;
+    }
+    .landing .container .info h1{
+        text-align: center;
+        font-size: 65px;
+        /* margin-top: 5px; */
+        padding-right: 257px;
+        
+    }
+    .landing .container .image img{
+        width: 671px;
+        object-fit: cover;
+        padding: 0;
+       
+        }
+        .landing .container .btn{
+            font-size: 15px;
+        }
+}
