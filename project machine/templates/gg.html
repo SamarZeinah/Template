@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/vv.css" />
+    <title>Master Card</title>
+  </head>
+  <body>
+    <div class="twoCards">
+      <div class="card">
+        <div class="container">
+          <h1>Master Card Price Prediction</h1>
+          <div class="info">
+            <div class="high">
+              <p>Highest Price:</p>
+              <input type="number" id="highestprice" />
+            </div>
+            <div class="low">
+              <p>Lowest Price:</p>
+              <input type="number" id="lowestprice" />
+            </div>
+            <div class="start">
+              <p>Start Price:</p>
+              <input type="number" id="startprice" />
+            </div>
+            <div class="Trading">
+              <p>Trading Volume:</p>
+              <input type="text" id="tradingvolume" />
+            </div>
+            <button id="confirm">Confirm</button>
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <h1>Our Data</h1>
+        <table>
+          <tr>
+            <th>Highest Price</th>
+            <th>Lowest Price</th>
+            <th>Start Price</th>
+            <th>Trading Volume</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="face">
+    <h1> Welcome</h1>
+    <button id="start">Start</button>
+    </div>
+    <!-- this part to display predicted price -->
+    <div class="prediction">
+      <h1>Predicted Price:</h1>
+      <p id="predicted_price"></p>
+    </div>
+  </body>
+</html>
+<script src="/static/hh.js"></script>

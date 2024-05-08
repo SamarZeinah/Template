@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  background-color: grey;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body::after {
+  content: "";
+  background-color: black;
+  background-size: cover;
+  z-index: -100;
+  width: 20.5%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.twoCards {
+  display: flex;
+  position: relative;
+}
+.twoCards .card {
+  position: absolute;
+  top: 60px;
+  left: 103px;
+}
+.twoCards .result {
+  position: absolute;
+  top: 133px;
+  right: 130px;
+}
+.card .container,
+.result {
+  max-width: 900px;
+  margin: 2px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card .container .info {
+  padding: 6px;
+}
+
+.card .container h1,
+.result h1 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 10px;
+}
+.card .container p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card .container input {
+  margin-left: 15%;
+  padding: 10px;
+  border-radius: 10px;
+  width: 75%;
+  background-color: lightgray;
+  border: none;
+}
+.card .container input:focus {
+  transform: scale(1.1);
+}
+.card .container .info button {
+  margin-left: 15%;
+  padding: 10px;
+  border-radius: 10px;
+  width: 75%;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+table {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+}
+table th {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+th,
+td {
+  padding: 5px;
+}
+.face{
+  background-color: black;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.face h1{
+color: white;
+font-size: 80px;
+font-weight: bold;
+position: absolute;
+  left: 39%;
+  top: 25%;
+  background-color:black;
+}
+.face button{
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 60px;
+  padding: 10px 40px;
+  font-weight: bold;
+  
+  
+  }
